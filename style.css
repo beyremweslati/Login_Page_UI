@@ -1,0 +1,153 @@
+body{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(41, 41, 41, .35);
+    height:31.25vw;
+    width: 39.58vw;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+.username{
+    height: 4.02vw;
+    width: 23.74vw;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding-top: 6%;
+}
+.password{
+    height: 7.18vw;
+    width: 31.66vw;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+label{
+    color: #666666;
+    font-size: 1.04vw;
+    font-family:cursive;
+}
+input{
+    width: 23.43vw;
+    height: 1.30vw;
+    border-bottom: 1px solid white;
+    background: transparent;
+    transition: 1s;
+    border-top-width:0px;
+    border-right-width:0px;
+    border-left-width:0px;
+    border-radius: 10px;
+    font-size: 1.04vw;
+    color: white;
+}
+h1{
+    color: white;
+    font-size: 2.60vw;
+    text-align: left;
+    padding-left: 3.64vw;
+    padding-top: 2.60vw;
+    font-family: cursive;
+}
+.button{
+    background-color: #144b33;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    margin-left:  3.9vw;
+}
+.front{
+    will-change: transform;
+    transition:
+        transform
+        250ms
+        cubic-bezier(.3, .7, .4, 1);
+    display: block;
+    padding: 0.62vw 2.18vw;
+    border-radius: 12px;
+    font-size: 1rem;
+    background-color: #299968;
+    color: white;
+    transform: translateY(-4px);
+    
+}
+.button:hover .front {
+    transform: translateY(-6px);
+    transition:
+        transform
+        250ms
+        cubic-bezier(.3, .7, .4, 1.5);
+}
+.button:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+.button:focus:not(:focus-visible) {
+    outline: none;
+}
+@media screen and (max-width: 699px) {
+    .container{
+        height: 550px;
+        width: 330px;
+    }
+    .username{
+        height: 20%;
+        width: 80%;
+    }
+    .password{
+        height: 20%;
+        width: 80%;
+
+    }
+    label{
+        font-size: 26px;
+    }
+    h1{
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    input{
+        width: 80%;
+        height: 15%;
+    }
+    .button{
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+    .front{
+        padding: 3.5vw 6vw;
+    }
+}
+@media screen and (min-width: 701px) {
+    .container{
+        height: 650px;
+        width: 750px;
+    }
+    .username{
+        height: 20%;
+        width: 80%;
+    }
+    .password{
+        height: 20%;
+        width: 80%;
+
+    }
+    label{
+        font-size: 26px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    input{
+        width: 80%;
+        height: 15%;
+    }
+    .button{
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+}
